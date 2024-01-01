@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <style>
+            body{
+                margin: 30px 0px 0px 0px;
+            }
+            div::before{
+                content: "";
+                position: absolute;
+                left: 0;
+                width: 139px;
+                height: 40px;
+                background-color: #febd69;
+                box-shadow: 0px 0px 30px #febd69;
+                transform: translateX(-100%);
+                transition: all .3s;
+                z-index: -1;
+            }
+            div:hover::before {
+                 transform: translateX(0);
+            }
+            div{
+                background-color: none;
+                margin-bottom: 20px;
+                text-align: center;
+                font-size: larger;
+                font-weight: 600;
+                font-family: sans-serif;
+            }
+            /*
+            div:hover{
+                background-color: #febd69;
+                border: 2px solid #febd69;
+                box-shadow: 30px 0px 30px #febd69;
+            }*/
+            
+            a{
+                text-decoration: none;
+                color: black;
+            }
+            br{
+                line-height: 10px;
+            }
+        </style>
+    </head>
+
+<body style="background-color: #E6E6E6;">
+
+    <a href="index.html" target="mainFrame"><div><br>Home</div></a>
+    <a href="Login.html" target="mainFrame"><div><br>Login</div></a>
+    <a href="Sign up.html" target="mainFrame"><div><br>Sign up</div></a>
+    <a href="Profile.html" target="mainFrame"><div><br>UserProfile</div></a>
+    <a href="Cart.html" target="mainFrame"><div><br>Shopping Cart</div></a>
+    <a href="Payment.html" target="mainFrame"><div><br>Payment</div></a>
+
+</body>
+    
+</html>
